@@ -33,6 +33,8 @@ it with the following command:
 
 ```sudo apt install bloodhound neo4j```
 
+```apt update && apt upgrade```
+
 #Task 3  Enumeration Welcome to Attacktive Directory
 
 Welcome to Attacktive Directory
@@ -64,3 +66,46 @@ For more information on nmap, check out the nmap room.
 
 Notes: Flags for each user account are available for submission. You can retrieve the flags for user accounts via
 RDP (Note: the login format is spookysec.local\User at the Window's login prompt) and Administrator via Evil-WinRM.
+
+Ran command ```nmap spookysec.local```
+
+failed, edited /etc/hosts/
+
+Ran command ``echo 10.2.70.52 spookysec.local >> /etc/host``` failed
+
+used vim to add
+
+Ran command >`nmap -sC -sV -oA nmap/attactive-open-ports -T4 10.10.74.184 > attacktive_directory.log`
+
+Ran command `nmap -p- -A -o portscan 10.10.74.184`
+
+What tool will allow us to enumerate port 139/445?
+Answer-`enum4linux`
+What is the NetBIOS-Domain Name of the machine?
+Answer-`THM-AD`
+What invalid TLD do people commonly use for their Active Directory Domain?
+Answer-`.local`
+
+#Task 4  Enumeration Enumerating Users via Kerberos
+
+Introduction:
+
+A whole host of other services are running, including Kerberos. Kerberos is a key authentication 
+service within Active Directory. With this port open, we can use a tool called Kerbrute (by Ronnie
+Flathers @ropnop) to brute force discovery of users, passwords and even password spray!
+
+Enumeration:
+
+For this box, a modified User List and Password List will be used to cut down on time of enumeration
+of users and password hash cracking. It is NOT recommended to brute force credentials due to account
+lockout policies that we cannot enumerate on the domain controller.
+
+What command within Kerbrute will allow us to enumerate valid usernames?
+Answer-`userenum`
+
+What notable account is discovered? (These should jump out at you)
+Answer-`svc-admin`
+
+What is the other notable account is discovered? (These should jump out at you)
+Answer-`backup`
+
