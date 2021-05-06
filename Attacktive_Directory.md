@@ -80,10 +80,15 @@ Ran command >`nmap -sC -sV -oA nmap/attactive-open-ports -T4 10.10.74.184 > atta
 Ran command `nmap -p- -A -o portscan 10.10.74.184`
 
 What tool will allow us to enumerate port 139/445?
+
 Answer-`enum4linux`
+
 What is the NetBIOS-Domain Name of the machine?
+
 Answer-`THM-AD`
+
 What invalid TLD do people commonly use for their Active Directory Domain?
+
 Answer-`.local`
 
 #Task 4  Enumeration Enumerating Users via Kerberos
@@ -101,11 +106,14 @@ of users and password hash cracking. It is NOT recommended to brute force creden
 lockout policies that we cannot enumerate on the domain controller.
 
 What command within Kerbrute will allow us to enumerate valid usernames?
+
 Answer-`userenum`
 
 What notable account is discovered? (These should jump out at you)
+
 Answer-`svc-admin`
 
 What is the other notable account is discovered? (These should jump out at you)
+
 Answer-`backup`
 
