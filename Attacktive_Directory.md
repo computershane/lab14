@@ -1,13 +1,13 @@
-#TryHackMe Attacktive_Directory
+# TryHackMe Attacktive_Directory
 
 <img src="Attacktive_directory.png"
      alt="Attacktive_directory_icon"
      style="float: left; margin-right: 10px;" />
      
-#Task 1  Intro Deploy The Machine
+# Task 1  Intro Deploy The Machine
 Connected VPN
 
-#Task 2  Intro Setup
+# Task 2  Intro Setup
 
 Installing Impacket:
 
@@ -35,7 +35,7 @@ it with the following command:
 
 ```apt update && apt upgrade```
 
-#Task 3  Enumeration Welcome to Attacktive Directory
+# Task 3  Enumeration Welcome to Attacktive Directory
 
 Welcome to Attacktive Directory
 
@@ -71,7 +71,7 @@ Ran command ```nmap spookysec.local```
 
 failed, edited /etc/hosts/
 
-Ran command ``echo 10.2.70.52 spookysec.local >> /etc/host``` failed
+Ran command ```echo 10.2.70.52 spookysec.local >> /etc/host``` failed
 
 used vim to add
 
